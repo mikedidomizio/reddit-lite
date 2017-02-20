@@ -1,0 +1,19 @@
+comment {
+  padding: 10px;
+  margin: 5px 5px 5px 20px;
+  border: 1px solid #CCC;
+  display: block;
+  overflow: hidden;
+}
+
+comment.even {
+  background-color: #EEE;
+}
+
+comment.odd {
+  background-color: #FFF;
+}
+
+comment .author {
+  border-bottom: 1px solid #000;
+}

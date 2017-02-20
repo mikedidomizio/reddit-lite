@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>{{ subreddit }}</h1>
+
+    <subreddit-post-item url="item.data.url" created-utc="item.data.created_utc" thumbnail="item.data.thumbnail"
+                         permalink="item.data.permalink"
+                         author="item.data.author"
+                         title="item.data.title"
+                         ng-repeat="item in listOfPopularPosts.data.data.children">
+    </subreddit-post-item>
+
+    <div ng-show="listOfPopularPosts !== undefined">
+        <a ng-if="listOfPopularPosts.data.data.before !== null"
+           href="#/r/{{ subreddit }}?before={{ listOfPopularPosts.data.data.before }}">Previous Page</a>
+        <a ng-if="listOfPopularPosts.data.data.after !== null"
+           href="#/r/{{ subreddit }}?after={{ listOfPopularPosts.data.data.after }}">Next Page</a>
+    </div>
+</div>

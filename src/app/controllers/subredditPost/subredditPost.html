@@ -1,0 +1,8 @@
+<div ng-if="post" class="container">
+    <h1>{{ post.data[0].data.children[0].data.title }}</h1>
+    <h4>Posted by {{ post.data[0].data.children[0].data.author }}</h4>
+    <h5>Posted on {{ post.data[0].data.children[0].data.created_utc * 1000 | date: 'short' }}</h5>
+    <div>
+        <comment css-class="odd" data="item" ng-repeat="item in post.data[1].data.children"></comment>
+    </div>
+</div>

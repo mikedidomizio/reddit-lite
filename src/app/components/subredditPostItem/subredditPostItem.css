@@ -1,0 +1,14 @@
+subreddit-post-item {
+  padding: 20px;
+  overflow: hidden;
+  display: block;
+}
+
+subreddit-post-item:nth-child(odd) {
+  background-color: #EEE;
+}
+
+subreddit-post-item .image-link {
+  display: inline-block;
+  margin-right: 10px;
+}

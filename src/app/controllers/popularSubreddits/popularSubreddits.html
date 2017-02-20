@@ -1,0 +1,14 @@
+<div id="popular-subreddits">
+
+    <h1>Popular Subreddits</h1>
+
+    <div ng-repeat="item in listOfSubreddits.data.data.children">
+        <div>
+            <a href="#{{ item.data.url }}">
+                <img src="{{ item.data.icon_img }}"/>
+                {{ item.data.display_name }}
+            </a>
+        </div>
+    </div>
+
+</div>
